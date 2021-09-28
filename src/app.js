@@ -57,6 +57,7 @@ const express = require("express");
 const hbs = require("hbs");
 const response = require("express");
 const app = express();
+const port = process.env.PORT || 3000;
 
 //Challenge
 const geocode = require("./utils/geocode");
@@ -149,6 +150,9 @@ app.get("*", (req, res) => {
     errorMsg: "Page not found!",
   });
 });
-app.listen(3000, () => {
-  console.log("Server is up to port 3000.");
+// app.listen(3000, () => {
+//   console.log("Server is up to port 3000.");
+// });
+app.listen(port, () => {
+  console.log("Server is up to port" + port);
 });
