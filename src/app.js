@@ -85,9 +85,8 @@ app.get("", (req, res) => {
 });
 app.get("/about", (req, res) => {
   res.render("about", {
-    title: "Your weather forecast today",
-    subTitle:
-      "Get the latest news about your weather or in any location worldwide",
+    title: "Weather Forecast Today",
+    subTitle: "Get the latest news about the weather in any location worldwide",
   });
 });
 app.get("/help", (req, res) => {
