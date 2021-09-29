@@ -150,6 +150,7 @@ app.get("*", (req, res) => {
     errorMsg: "Page not found!",
   });
 });
+
 // app.listen(3000, () => {
 //   console.log("Server is up to port 3000.");
 // });
