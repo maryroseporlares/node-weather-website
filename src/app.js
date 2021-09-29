@@ -154,5 +154,5 @@ app.get("*", (req, res) => {
 //   console.log("Server is up to port 3000.");
 // });
 app.listen(port, () => {
-  console.log("Server is up to port" + port);
+  console.log("Server is up to port " + port);
 });
